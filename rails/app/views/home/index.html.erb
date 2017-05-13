@@ -1,0 +1,41 @@
+<h1>Session key/value</h1>
+<p>display session key/value</p>
+
+<hr>
+
+<p>Automatically set value</p>
+<table border="1">
+  <tr>
+    <th>key</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>session[:session_id]</td>
+    <td><%= session[:session_id] %></td>
+  </tr>
+  <tr>
+    <td>request.session_options[:id]:</td>
+    <td><%= request.session_options[:id] %></td>
+  </tr>
+
+</table>
+
+<p>Manualy set value</p>
+<table border="1">
+  <tr>
+    <th>key</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>session[:test]</td>
+    <td><%= session[:test] %></td>
+  </tr>
+  <tr>
+    <td>session[:random]</td>
+    <td><%= session[:random] %></td>
+  </tr>
+</table>
+
+<hr>
+
+<%= link_to 'set session value', set_session_value_manually_path %>
