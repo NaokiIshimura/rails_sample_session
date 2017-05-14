@@ -7,7 +7,7 @@
 ## Railsアプリの起動
 1. bundle install
 ```
-$ rails
+$ cd rails
 $ bundle install
 ```
 
@@ -25,11 +25,11 @@ http://localhost:3000
 ## テストスクリプトの実行
 1. webdriverへのパスを設定する
 ```
-$ cd selenium
 $ export PATH=$PATH:/xxx/xxx
 ```
 
 2. 実行
 ```
+$ cd selenium
 $ ruby selenium.rb
 ```
