@@ -16,11 +16,11 @@ def test2(driver)
 
 end
 
-# ブラウザの起動→終了→別ブラウザの起動→終了
+# ブラウザ1の起動→終了→ブラウザ2の起動→終了
 test1(Selenium::WebDriver.for :chrome)
 test1(Selenium::WebDriver.for :chrome)
 
-# ブラウザの起動→別ブラウザの起動→両ブラウザ終了
+# ブラウザ1の起動→ブラウザ2の起動→ブラウザ1~2終了
 test2(Selenium::WebDriver.for :chrome)
 test2(Selenium::WebDriver.for :chrome)
 
